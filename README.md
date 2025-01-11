@@ -54,4 +54,8 @@ python nfs_manager.py
 
 ## More Information
 
-Visit our [project page](https://yani-.github.io/windows-nfs-manager/) for detailed documentation and screenshots. 
+Visit our [project page](https://yani-.github.io/windows-nfs-manager/) for detailed documentation and screenshots.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
