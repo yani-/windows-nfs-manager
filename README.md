@@ -1,44 +1,57 @@
-# NFS Drive Manager
+# Windows NFS Manager
 
-A simple GUI application for Windows to manage NFS drives. Features include:
-- Mount NFS drives
-- Unmount drives
-- View drive properties
-- Real-time status monitoring
+A simple GUI application for managing NFS drives on Windows.
 
-## Requirements
-- Python 3.x
-- Windows with NFS Client feature enabled
+![NFS Manager](docs/application.png)
 
-## Setup
+## Features
+- 🔌 Easy mounting of NFS drives through a graphical interface
+- ⚙️ Advanced mount settings configuration
+- 📊 Real-time drive status and properties monitoring
+- 🛡️ Safe unmounting of drives
 
-1. Install required Python packages:
+## Quick Start
+
+### Option 1: Download Executable
+1. Download the [latest release](https://github.com/yani-/windows-nfs-manager/releases/latest)
+2. Enable Windows NFS Client feature if not already enabled
+3. Run the application
+
+### Option 2: Build from Source
+1. Clone the repository
+2. Install requirements:
 ```bash
 pip install -r requirements.txt
 ```
-
-2. Enable Windows NFS Client feature:
-   - Open "Control Panel"
-   - Go to "Programs and Features"
-   - Click "Turn Windows features on or off"
-   - Check "Services for NFS" and its sub-components
-   - Click OK and restart if prompted
-
-## Usage
-
-1. Run the application:
+3. Run the application:
 ```bash
 python nfs_manager.py
 ```
 
-2. To mount an NFS drive:
-   - Enter the server address (e.g., 192.168.1.100)
-   - Enter the share path (e.g., /exports/share1)
-   - Select a drive letter
-   - Click "Mount"
+## Setup Windows NFS Client
 
-3. To unmount a drive:
-   - Select the drive from the list
-   - Click "Unmount Selected"
+1. Open "Control Panel"
+2. Go to "Programs and Features"
+3. Click "Turn Windows features on or off"
+4. Check "Services for NFS" and its sub-components
+5. Click OK and restart if prompted
 
-4. View properties by selecting a drive from the list 
+## Usage
+
+1. Enter the NFS server address (e.g., 192.168.1.100)
+2. Enter the share path (e.g., /exports/share1)
+3. Select a drive letter
+4. (Optional) Configure mount settings via the ⚙️ button
+5. Click "Mount"
+
+## Mount Settings
+
+- User/Group IDs: Match with NFS server permissions
+- Transfer Sizes: Larger = better performance (if stable)
+- Timeout: Lower = faster reconnect on issues
+- File Access: 755 = standard read/write/execute
+- Soft Mount: Recommended for better reliability
+
+## More Information
+
+Visit our [project page](https://yani-.github.io/windows-nfs-manager/) for detailed documentation and screenshots. 
